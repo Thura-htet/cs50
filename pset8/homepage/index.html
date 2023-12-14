@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Home</title>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <nav id="n" class="navbar navbar-expand-sm navbar-light navbar-style">
+            <button onclick="darken()" id="butt" class="navbar-header">lxgsts</button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse navigate" id="navbarSupportedContent">
+                <ul class="navbar-nav navigate">
+                    <li class="nav-item">
+                        <a class="nav-link" id="home" href="home.html">home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="goals.html">goals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reading.html">reading</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id= "padding" class="nav-link" href="about.html">about</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="post">
+            <h2>Hello, World! I'm Alex.</h2>
+            <p>This is my first website and I made it for <a href="https://cs50.harvard.edu/x/2020/">CS50's homepage assignment.</a> As you may have noticed, it is a static website; and, maintaining this website is pretty inconvenient. So, for sake of demonstration, I filled up the contents with some Lorem Ipsums. However, I hope that you enjoy this website's layout and design!</p>
+            <p>If you have any suggestions to make, please contact lxgsts@gmail.com</p>
+        </div>
+        <div class="post">
+            <h2>Lorem Ipsum</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid sed eaque ut, quasi delectus maxime aliquam possimus, explicabo dolorem nostrum neque enim magni culpa, ipsam perspiciatis numquam nulla fugit! Quo, facere voluptate. Dolor reiciendis, consectetur amet earum maiores molestias architecto laboriosam nisi, assumenda deleniti perferendis officia autem iusto nam corporis quis molestiae! Ducimus quo dignissimos quod commodi quas itaque possimus!</p>
+        </div>
+        <div class="post">
+            <h2>Lorem Ipsum</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa unde quas ad aperiam fugiat officiis incidunt sapiente accusantium, magni eligendi voluptatem accusamus ab, tenetur omnis suscipit deserunt laboriosam ut beatae quam optio necessitatibus nobis! Fugit amet porro officiis, modi nesciunt dolorem, soluta architecto esse eligendi fugiat a quas. Voluptatem, architecto eligendi. Officia expedita qui, sequi obcaecati voluptate, quam delectus veritatis at id blanditiis totam magni ratione unde facilis voluptas, alias est fugiat ducimus nisi animi modi! Quia laudantium maxime odio necessitatibus est! Dolor tempore, animi recusandae aliquid ipsam possimus consequuntur reprehenderit velit soluta hic eligendi illo! Sed in provident ratione.</p>
+        </div>
+
+    <script>
+        function darken()
+        {
+            var body = document.body;
+            var navbar = document.querySelector('#n');
+            var button = document.querySelector('#butt');
+            body.classList.toggle("darkmode");
+            navbar.classList.toggle("darkmode");
+            button.classList.toggle("darkmode");
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html>

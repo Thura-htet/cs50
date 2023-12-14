@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Home</title>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <nav id="n" class="navbar navbar-expand-sm navbar-light navbar-style">
+            <button onclick="darken()" id="butt" class="navbar-header">lxgsts</button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse navigate" id="navbarSupportedContent">
+                <ul class="navbar-nav navigate">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="goals.html">goals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="home" href="reading.html">reading</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id= "padding" class="nav-link" href="about.html">about</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="post">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sit accusantium eum non. Assumenda, delectus debitis nemo, consequuntur sit nobis esse, cumque magnam magni porro quae recusandae ullam aliquid officiis?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nostrum nobis laudantium. Voluptatum eum praesentium repellendus aspernatur reprehenderit consectetur et quidem temporibus, placeat laudantium labore molestias consequuntur illum ipsam delectus quis nisi est officiis sit eaque inventore obcaecati enim culpa perferendis! Necessitatibus debitis, ullam cum natus beatae repellat harum exercitationem laborum rem quasi adipisci quam minus voluptatibus! Doloribus, rerum consectetur!</p>
+        </div>
+
+    <script>
+        function darken()
+        {
+            var body = document.body;
+            var navbar = document.querySelector('#n');
+            var button = document.querySelector('#butt');
+            body.classList.toggle("darkmode");
+            navbar.classList.toggle("darkmode");
+            button.classList.toggle("darkmode");
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,97 @@
+body
+{
+    width: 80%;
+    margin: auto;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.navbar-style
+{
+    padding:0;
+}
+
+.navbar-style
+{
+    background-color: #ffffff;
+    color: #000000;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #000000;
+}
+
+.navbar-header
+{
+    font-family: 'Raleway', sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 900;
+    font-size: 40px;
+    border: 1px solid #303030;
+    border-radius: 20px;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.navigate
+{
+    margin-left: auto;
+    font-family: 'Raleway', sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.darkmode
+{
+    background-color: #303030;
+    color: white;
+}
+
+#padding
+{
+    padding-right: 0;
+}
+
+#home
+{
+    font-weight: 900;
+    color: #000000;
+}
+
+#about
+{
+    padding-right: 0;
+    font-weight: 900;
+    color: #000000;
+}
+
+#goals
+{
+    font-weight: 900;
+    color: #000000;
+}
+
+#books
+{
+    font-weight: 900;
+    color: #000000;
+}
+
+h2
+{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 30;
+    font-weight: 600;
+    margin: 10px auto;
+}
+
+.post
+{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 30px auto;
+    padding: 10px;
+    background: rgba(221, 220, 219, 0.25);
+    border-radius: 30px;
+}

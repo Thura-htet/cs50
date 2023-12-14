@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+
+{% block main %}
+    {% if request.method == "GET" %}
+        <form action="/trend" method="post">
+            <div class="form-group">
+                <input autocomplete="off" autofocus class="form-control" name="symbol" placeholder="Symbol" type="text">
+            </div>
+            <div class="form-group">
+                <input autocomplete="off" autofocus class="form-control" name="start" placeholder="Starting from" type="date">
+            </div>
+            <div class="form-group">
+                <input autocomplete="off" autofocus class="form-control" name="end" placeholder="Up to" type="date">
+            </div>
+            <button class="btn btn-primary" type="submit">Check</button>
+        </form>
+    {% else %}
+        <p>
+            A share of {{ name }} ({{ symbol }}) costs {{ price }}.
+        </p>
+    {% endif %}
+{% endblock %}
